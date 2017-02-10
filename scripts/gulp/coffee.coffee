@@ -5,7 +5,7 @@ coffee =
     options:
         defaults:
             bare: true
-    files: './src/*.coffee'
+    files: './src/**/*.coffee'
 
 transpileFn = (options = coffee.options.defaults) ->
     gulpCoffee options

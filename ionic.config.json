@@ -1,0 +1,9 @@
+{
+  "name": "ytz",
+  "app_id": "",
+  "v2": true,
+  "typescript": false,
+  "documentRoot": "src",
+  "createDocumentRoot": "src",
+  "watchPatterns": [ "src/*/**.js", "src/*/**.html", "src/*/**.css" ]
+}

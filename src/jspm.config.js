@@ -28,6 +28,9 @@ SystemJS.config({
           "loader": "plugin-babel"
         }
       }
+    },
+    "": {
+      "defaultExtension": "js"
     }
   }
 });
@@ -42,7 +45,7 @@ SystemJS.config({
     "@angular/common": "npm:@angular/common@2.2.1",
     "@angular/compiler": "npm:@angular/compiler@2.2.1",
     "@angular/compiler-cli": "npm:@angular/compiler-cli@2.2.1",
-    "@angular/core": "npm:@angular/core@2.2.1",
+    "@angular/core": "npm:@angular/core@2.4.6",
     "@angular/forms": "npm:@angular/forms@2.2.1",
     "@angular/http": "npm:@angular/http@2.2.1",
     "@angular/platform-browser": "npm:@angular/platform-browser@2.2.1",
@@ -62,7 +65,8 @@ SystemJS.config({
     "os": "npm:jspm-nodelibs-os@0.2.0",
     "path": "npm:jspm-nodelibs-path@0.2.1",
     "process": "npm:jspm-nodelibs-process@0.2.0",
-    "rxjs": "npm:rxjs@5.0.0-beta.12",
+    "reflect-metadata": "npm:reflect-metadata@0.1.9",
+    "rxjs": "npm:rxjs@5.1.0",
     "stream": "npm:jspm-nodelibs-stream@0.2.0",
     "string_decoder": "npm:jspm-nodelibs-string_decoder@0.2.0",
     "timers": "npm:jspm-nodelibs-timers@0.2.0",
@@ -70,14 +74,9 @@ SystemJS.config({
     "url": "npm:jspm-nodelibs-url@0.2.0",
     "util": "npm:jspm-nodelibs-util@0.2.1",
     "vm": "npm:jspm-nodelibs-vm@0.2.0",
-    "zone.js": "npm:zone.js@0.6.26"
+    "zone.js": "npm:zone.js@0.7.6"
   },
   packages: {
-    "npm:rxjs@5.0.0-beta.12": {
-      "map": {
-        "symbol-observable": "npm:symbol-observable@1.0.4"
-      }
-    },
     "npm:jspm-nodelibs-crypto@0.2.0": {
       "map": {
         "crypto-browserify": "npm:crypto-browserify@3.11.0"
@@ -366,6 +365,11 @@ SystemJS.config({
       "map": {
         "querystring": "npm:querystring@0.2.0",
         "punycode": "npm:punycode@1.3.2"
+      }
+    },
+    "npm:rxjs@5.1.0": {
+      "map": {
+        "symbol-observable": "npm:symbol-observable@1.0.4"
       }
     }
   }
