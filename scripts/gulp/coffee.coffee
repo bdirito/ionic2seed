@@ -2,17 +2,13 @@ gulpCoffee = require 'gulp-coffee'
 gulpRename = require 'gulp-rename'
 
 gulp = require 'gulp'
+settings = require './settings'
 
-coffee =
-    options:
-        bare: true
-    files: './src/**/*.coffee'
-
-transpileFn = (options = coffee.options) ->
+transpileFn = (options = settings.coffee.options) ->
     gulpCoffee options
 
 gulp.task 'coffee',  ->
-    gulp.src coffee.files, { base: '.' }
+    gulp.src settings.files.coffee, { base: '.' }
         .pipe transpileFn()
         .pipe gulpRename
             extname: '.js6'

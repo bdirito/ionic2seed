@@ -170,7 +170,9 @@
     "del": "^2.2.2",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-babel": "^6.1.2",
+    "gulp-cached": "^1.1.1",
     "gulp-coffee": "^2.3.3",
-    "gulp-rename": "^1.2.2"
+    "gulp-rename": "^1.2.2",
+    "multipipe": "^1.0.2"
   }
 }
