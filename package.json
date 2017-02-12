@@ -77,7 +77,7 @@
           "./testing": "./bundles/compiler-testing.umd.js"
         }
       },
-      "npm:@angular/core@2.4.6": {
+      "npm:@angular/core@2.4.7": {
         "meta": {
           "src/*.js": {
             "deps": [
@@ -175,4 +175,4 @@
     "gulp-rename": "^1.2.2",
     "multipipe": "^1.0.2"
   }
-}
+}

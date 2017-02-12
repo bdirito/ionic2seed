@@ -1,8 +1,12 @@
 import { Component } from '@angular/core'
+import { StartPage } from './start.component'
 
 export class MainPage
+    constructor: ->
+        @rootPage = StartPage
+
     @annotations = [
         new Component
             selector: 'testapp'
-            template: '<p>my first ion2 app</p>'
+            template: '<ion-nav [root]="rootPage"></ion-nav>'
     ]

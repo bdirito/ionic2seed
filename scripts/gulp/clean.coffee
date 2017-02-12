@@ -6,4 +6,5 @@ gulp.task 'clean', ->
         'src/**/*.js',
         'src/**/*.js6',
         '!src/jspm_packages/**'
+        '!src/jspm.config.js'
         ]

@@ -2,3 +2,5 @@ node_modules
 src/jspm_packages
 src/**/*.js
 src/**/*.js6
+
+!src/jspm.config.js
