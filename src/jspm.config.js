@@ -13,6 +13,11 @@ SystemJS.config({
     "map": {
       "plugin-babel": "npm:systemjs-plugin-babel@0.0.20"
     }
+  },
+  packages: {
+    "": {
+      "defaultExtension": "js"
+    }
   }
 });
 
@@ -40,6 +45,7 @@ SystemJS.config({
     "fs": "npm:jspm-nodelibs-fs@0.2.0",
     "http": "npm:jspm-nodelibs-http@0.2.0",
     "ionic-angular": "npm:ionic-angular@2.0.1",
+    "ionic-native": "npm:ionic-native@2.5.1",
     "module": "npm:jspm-nodelibs-module@0.2.0",
     "net": "npm:jspm-nodelibs-net@0.2.0",
     "os": "npm:jspm-nodelibs-os@0.2.0",
@@ -350,6 +356,16 @@ SystemJS.config({
     "npm:mkdirp@0.5.1": {
       "map": {
         "minimist": "npm:minimist@0.0.8"
+      }
+    },
+    "npm:ionic-native@2.5.1": {
+      "map": {
+        "rxjs": "npm:rxjs@5.0.0-beta.12"
+      }
+    },
+    "npm:rxjs@5.0.0-beta.12": {
+      "map": {
+        "symbol-observable": "npm:symbol-observable@1.0.4"
       }
     }
   }
