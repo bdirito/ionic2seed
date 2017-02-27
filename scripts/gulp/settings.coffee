@@ -8,7 +8,9 @@ settings =
 
     babel:
         options:
-            presets: [ 'es2015' ]
-            plugins: [ 'transform-es2015-modules-systemjs' ] 
+            presets: ['es2015']# [
+            #     ['es2015', { 'modules': 'systemjs' } ]
+            # ]
+#            plugins: [ 'transform-es2015-modules-systemjs' ]
 
 module.exports = settings

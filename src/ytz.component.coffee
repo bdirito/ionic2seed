@@ -2,7 +2,7 @@ import { Component } from '@angular/core'
 import { Platform } from 'ionic-angular'
 import { StatusBar, Splashscreen } from 'ionic-native'
 
-import { MainPage } from './pages/main.component'
+#import { MainPage } from './pages/main.component'
 
 export class YtzApp
     @annotations = [
@@ -11,7 +11,7 @@ export class YtzApp
     ]
 
     constructor: (platform) ->
-        @rootPage = MainPage
+#        @rootPage = MainPage
 
         platform.ready()
         .then ->

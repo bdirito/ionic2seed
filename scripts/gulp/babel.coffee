@@ -4,6 +4,7 @@ gulpBabel = require 'gulp-babel'
 settings = require './settings'
 
 transpileFn = (options = settings.babel.options) ->
+    console.log options
     gulpBabel options
 
 gulp.task 'babel', ->
