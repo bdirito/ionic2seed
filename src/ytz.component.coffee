@@ -9,6 +9,9 @@ export class YtzApp
         new Component
             template: "abc"
     ]
+    @parameters = [
+        [Platform]
+    ]
 
     constructor: (platform) ->
 #        @rootPage = MainPage
