@@ -9,9 +9,11 @@
       "baseURL": "src"
     },
     "dependencies": {
+      "css": "npm:systemjs-plugin-css@^0.1.32",
       "ionic-angular": "npm:ionic-angular@^2.0.0",
       "ionic-native": "npm:ionic-native@^2.5.1",
-      "reflect-metadata": "npm:reflect-metadata@^0.1.9"
+      "reflect-metadata": "npm:reflect-metadata@^0.1.9",
+      "systemjs-plugin-css": "npm:systemjs-plugin-css@^0.1.32"
     },
     "devDependencies": {
       "plugin-babel": "npm:systemjs-plugin-babel@^0.0.20"

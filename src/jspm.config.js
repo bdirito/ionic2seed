@@ -1,4 +1,14 @@
 SystemJS.config({
+  meta: {
+    "*.css": {
+      "loader": "css"
+    }
+  },
+  packages: {
+    "": {
+      "defaultExtension": "js"
+    }
+  },
   browserConfig: {
     "paths": {
       "npm:": "/jspm_packages/npm/"
@@ -12,11 +22,6 @@ SystemJS.config({
   devConfig: {
     "map": {
       "plugin-babel": "npm:systemjs-plugin-babel@0.0.20"
-    }
-  },
-  packages: {
-    "": {
-      "defaultExtension": "js"
     }
   }
 });
@@ -41,6 +46,7 @@ SystemJS.config({
     "child_process": "npm:jspm-nodelibs-child_process@0.2.0",
     "constants": "npm:jspm-nodelibs-constants@0.2.0",
     "crypto": "npm:jspm-nodelibs-crypto@0.2.0",
+    "css": "npm:systemjs-plugin-css@0.1.32",
     "events": "npm:jspm-nodelibs-events@0.2.0",
     "fs": "npm:jspm-nodelibs-fs@0.2.0",
     "http": "npm:jspm-nodelibs-http@0.2.0",
