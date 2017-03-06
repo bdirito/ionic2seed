@@ -2,19 +2,19 @@ import { Component } from '@angular/core'
 import { Platform } from 'ionic-angular'
 import { StatusBar, Splashscreen } from 'ionic-native'
 
-#import { MainPage } from './pages/main.component'
+import { StartPage } from './pages/start.component'
 
 export class YtzApp
     @annotations = [
         new Component
-            template: "abc"
+            template: "<ion-nav [root]='rootPage'></ion-nav>"
     ]
     @parameters = [
         [Platform]
     ]
 
     constructor: (platform) ->
-#        @rootPage = MainPage
+        @rootPage = StartPage
 
         platform.ready()
         .then ->

@@ -170,7 +170,7 @@
     "babel-generator": "6.22.0",
     "babel-plugin-transform-es2015-modules-systemjs": "^6.22.0",
     "babel-preset-es2015": "^6.22.0",
-    "coffee-script": "^1.12.3",
+    "coffeescript": "next",
     "del": "^2.2.2",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-babel": "^6.1.2",

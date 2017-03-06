@@ -1,11 +1,15 @@
 import { Component } from '@angular/core'
+import { NavController } from 'ionic-angular'
+
+import { GamePage } from './game.component'
+import { SettingsPage } from './settings.component'
 
 export class StartPage
     @annotations = [
         new Component
             template: """
                 <ion-header>
-                    <ion-navbar>
+                    <ion-navbar hideBackButton=true>
                         <ion-title>Ytz!</ion-title>
                     </ion-navbar>
                 </ion-header>
@@ -13,9 +17,20 @@ export class StartPage
                     <button ion-button (click)="newGame()">
                         New Game
                     </button>
+                    <button ion-button (click)="gotoSettings()">
+                        Settings
+                    </button>
                 </ion-content>
             """
     ]
+    @parameters = [
+        [ NavController ]
+    ]
 
-    constructor: ->
+    constructor: (@navCtrl) ->
 
+    gotoSettings: =>
+        @navCtrl.push SettingsPage
+
+    newGame: =>
+        @navCtrl.push GamePage
