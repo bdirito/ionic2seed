@@ -41,6 +41,8 @@ SystemJS.config({
     "@angular/platform-browser": "npm:@angular/platform-browser@2.2.1",
     "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@2.2.1",
     "@angular/platform-server": "npm:@angular/platform-server@2.2.1",
+    "@ngrx/core": "npm:@ngrx/core@1.2.0",
+    "@ngrx/store": "npm:@ngrx/store@2.2.1",
     "assert": "npm:jspm-nodelibs-assert@0.2.0",
     "buffer": "npm:jspm-nodelibs-buffer@0.2.1",
     "child_process": "npm:jspm-nodelibs-child_process@0.2.0",
@@ -50,6 +52,7 @@ SystemJS.config({
     "events": "npm:jspm-nodelibs-events@0.2.0",
     "fs": "npm:jspm-nodelibs-fs@0.2.0",
     "http": "npm:jspm-nodelibs-http@0.2.0",
+    "immutable": "npm:immutable@3.8.1",
     "ionic-angular": "npm:ionic-angular@2.0.1",
     "ionic-native": "npm:ionic-native@2.5.1",
     "module": "npm:jspm-nodelibs-module@0.2.0",
@@ -153,7 +156,7 @@ SystemJS.config({
     "npm:stream-browserify@2.0.1": {
       "map": {
         "inherits": "npm:inherits@2.0.3",
-        "readable-stream": "npm:readable-stream@2.2.2"
+        "readable-stream": "npm:readable-stream@2.2.3"
       }
     },
     "npm:stream-http@2.6.3": {
@@ -181,7 +184,7 @@ SystemJS.config({
         "create-hash": "npm:create-hash@1.1.2",
         "create-hmac": "npm:create-hmac@1.1.4",
         "inherits": "npm:inherits@2.0.3",
-        "elliptic": "npm:elliptic@6.3.3",
+        "elliptic": "npm:elliptic@6.4.0",
         "bn.js": "npm:bn.js@4.11.6",
         "browserify-rsa": "npm:browserify-rsa@4.0.1",
         "parse-asn1": "npm:parse-asn1@5.0.0"
@@ -231,7 +234,7 @@ SystemJS.config({
     },
     "npm:create-ecdh@4.0.0": {
       "map": {
-        "elliptic": "npm:elliptic@6.3.3",
+        "elliptic": "npm:elliptic@6.4.0",
         "bn.js": "npm:bn.js@4.11.6"
       }
     },
@@ -272,14 +275,6 @@ SystemJS.config({
         "create-hash": "npm:create-hash@1.1.2"
       }
     },
-    "npm:elliptic@6.3.3": {
-      "map": {
-        "bn.js": "npm:bn.js@4.11.6",
-        "inherits": "npm:inherits@2.0.3",
-        "hash.js": "npm:hash.js@1.0.3",
-        "brorand": "npm:brorand@1.0.7"
-      }
-    },
     "npm:browserify-des@1.0.0": {
       "map": {
         "cipher-base": "npm:cipher-base@1.0.3",
@@ -310,7 +305,7 @@ SystemJS.config({
     "npm:miller-rabin@4.0.0": {
       "map": {
         "bn.js": "npm:bn.js@4.11.6",
-        "brorand": "npm:brorand@1.0.7"
+        "brorand": "npm:brorand@1.1.0"
       }
     },
     "npm:sha.js@2.4.8": {
@@ -372,6 +367,35 @@ SystemJS.config({
     "npm:rxjs@5.0.0-beta.12": {
       "map": {
         "symbol-observable": "npm:symbol-observable@1.0.4"
+      }
+    },
+    "npm:elliptic@6.4.0": {
+      "map": {
+        "inherits": "npm:inherits@2.0.3",
+        "bn.js": "npm:bn.js@4.11.6",
+        "hash.js": "npm:hash.js@1.0.3",
+        "brorand": "npm:brorand@1.1.0",
+        "minimalistic-assert": "npm:minimalistic-assert@1.0.0",
+        "hmac-drbg": "npm:hmac-drbg@1.0.0",
+        "minimalistic-crypto-utils": "npm:minimalistic-crypto-utils@1.0.1"
+      }
+    },
+    "npm:hmac-drbg@1.0.0": {
+      "map": {
+        "hash.js": "npm:hash.js@1.0.3",
+        "minimalistic-assert": "npm:minimalistic-assert@1.0.0",
+        "minimalistic-crypto-utils": "npm:minimalistic-crypto-utils@1.0.1"
+      }
+    },
+    "npm:readable-stream@2.2.3": {
+      "map": {
+        "isarray": "npm:isarray@1.0.0",
+        "inherits": "npm:inherits@2.0.3",
+        "string_decoder": "npm:string_decoder@0.10.31",
+        "util-deprecate": "npm:util-deprecate@1.0.2",
+        "buffer-shims": "npm:buffer-shims@1.0.0",
+        "process-nextick-args": "npm:process-nextick-args@1.0.7",
+        "core-util-is": "npm:core-util-is@1.0.2"
       }
     }
   }

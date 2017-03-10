@@ -7,6 +7,8 @@ import { GamePage } from './pages/game.component'
 import { SettingsPage } from './pages/settings.component'
 import { StartPage } from './pages/start.component'
 
+import { Die } from './component/die'
+
 export class AppModule
     @annotations = [
         new NgModule
@@ -16,6 +18,7 @@ export class AppModule
                 StartPage
                 GamePage
                 SettingsPage
+                Die
             ]
             bootstrap: [IonicApp]
             entryComponents: [
@@ -23,5 +26,6 @@ export class AppModule
                 StartPage
                 GamePage
                 SettingsPage
+                Die
             ]
     ]

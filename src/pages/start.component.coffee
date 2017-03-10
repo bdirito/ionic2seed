@@ -14,14 +14,19 @@ export class StartPage
                     </ion-navbar>
                 </ion-header>
                 <ion-content>
-                    <button ion-button (click)="newGame()">
-                        New Game
-                    </button>
-                    <button ion-button (click)="gotoSettings()">
-                        Settings
-                    </button>
+                    <div class='center'>
+                        <button ion-button (click)="newGame()">
+                            New Game
+                        </button>
+                        <button ion-button (click)="gotoSettings()">
+                            Settings
+                        </button>
+                    </div>
                 </ion-content>
             """
+            styles: [
+                '.center { display: flex; align-items: center; justify-content: center; height: 100%; width: 100%; flex-direction: column; }'
+            ]
     ]
     @parameters = [
         [ NavController ]

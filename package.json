@@ -9,7 +9,9 @@
       "baseURL": "src"
     },
     "dependencies": {
+      "@ngrx/store": "npm:@ngrx/store@^2.2.1",
       "css": "npm:systemjs-plugin-css@^0.1.32",
+      "immutable": "npm:immutable@^3.8.1",
       "ionic-angular": "npm:ionic-angular@^2.0.0",
       "ionic-native": "npm:ionic-native@^2.5.1",
       "reflect-metadata": "npm:reflect-metadata@^0.1.9",
@@ -28,6 +30,7 @@
       "@angular/platform-browser": "npm:@angular/platform-browser@2.2.1",
       "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@2.2.1",
       "@angular/platform-server": "npm:@angular/platform-server@2.2.1",
+      "@ngrx/core": "npm:@ngrx/core@^1.1.0",
       "assert": "npm:jspm-nodelibs-assert@^0.2.0",
       "buffer": "npm:jspm-nodelibs-buffer@^0.2.0",
       "child_process": "npm:jspm-nodelibs-child_process@^0.2.0",
@@ -182,4 +185,4 @@
     "jspm": "0.17.0",
     "multipipe": "^1.0.2"
   }
-}
+}
